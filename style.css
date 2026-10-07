@@ -1,0 +1,715 @@
+/*Copyright 2016 Toan Phat Online Service Trading Company Limited [http://toanphatonline.com - contact@toanphatonline.com]*/
+
+body{
+	background: #F1F1F1;
+}
+
+#atdl-logo{
+	position: absolute;
+	top:25px;
+	left: 24px;
+	text-decoration: none;
+	z-index: 999999;
+}
+
+#whatGood img, #whatGood input[type="image" i]{
+	max-width: 100%!important;
+	height: auto!important;
+}
+
+.tpo-day-draw-lq img, .tpo-day-draw-lq input[type="image" i]{
+	max-width: 280px!important;
+	height: auto!important;
+}
+
+#meaningThis p{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+tr.weekend td{
+	background: #F2DAA0!important;
+}
+
+.inq{
+	padding: 10px!important;
+}
+
+.inq p,  .inq div{
+	padding: 0px!important;
+}
+
+.inq, .inq p,  .inq div{
+	font-size: 16px!important;
+	text-align: center!important;
+}
+
+#atdl-logo img{
+	width: 80px;
+	height: auto;
+	opacity: 0.5;
+	border-radius: 5px;
+}
+
+#atdl-logo img:hover{
+	opacity: 1;
+}
+
+.tqsnew{
+	font-size: 90%;
+	line-height: normal;
+	font-weight: normal;
+}
+
+.ltdiv{
+	background: #edede6;
+	font-size: 90%;
+	font-weight: normal;
+	margin-top: 10px;
+	padding: 10px 0px;
+	line-height: normal;
+	/*margin-bottom: -8px;*/
+}
+
+.ngayDangChon{
+	border: 5px solid red;
+	/*background: url('la-roi.gif') center repeat;*/
+}
+
+.tenthang{
+	padding: 10px;
+}
+
+.list-year{
+	display: none;
+	width: 600px;
+	position: fixed;
+	top: 20px;
+	left: 50%;
+	margin-left: -313px;
+	background: #fff;
+	padding: 10px;
+	border-radius: 20px;
+	border: 3px solid green;
+	z-index: 999999;
+}
+
+.tkq{
+	float: left;
+	font-family: "Kanit", arial, tahoma;
+}
+
+.clear{clear:both;}
+
+.xkq{
+	float: right;
+	font-family: "Kanit", arial, tahoma;
+}
+
+.lt-block{
+	width: 402px;
+	margin: 0 auto;
+}
+
+#ldlmscrolltop{
+	border-bottom: 3px solid red;
+}
+
+#ldlmscrolltop .other-infos{
+	margin-top: 0px!important;
+}
+
+#ldlmscrollbottom{
+	position: fixed;
+	/*width: 100%;*/
+	width: calc(100% - 36px); 
+	z-index: 99999999999;
+	border-top: 3px solid red;
+	bottom: 0px!important;
+	top: auto!important;
+}
+
+#ldlmscrollbottom .other-infos{
+	margin-top: 0px!important;
+}
+
+.lt-block{
+	margin-bottom: 10px;
+}
+
+.list-year li{
+	list-style: none;
+}
+
+.list-year li a{
+	font-size: 40px;
+	text-decoration: none;
+	color: blue;
+}
+
+.list-year li a:hover{
+	color: green;
+}
+
+.list-year li a:visited{
+	color: blue;
+}
+
+.list-month{
+	display: none;
+	width: 600px;
+	position: fixed;
+	top: 20px;
+	left: 50%;
+	margin-left: -313px;
+	background: #fff;
+	padding: 10px;
+	border-radius: 20px;
+	border: 3px solid green;
+	z-index: 99999;
+}
+
+.list-month li{
+	list-style: none;
+}
+
+.list-month li a{
+	font-size: 40px;
+	text-decoration: none;
+	color: blue;
+}
+
+.list-month li a:hover{
+	color: green;
+}
+
+.list-month li a:visited{
+	color: blue;
+}
+
+#current-month a{
+	color: red;	
+}
+
+#current-year{
+	border: 2px solid green;
+	border-radius: 10px;
+	margin: 15px 0px;
+}
+
+#current-year a{
+	font-size: 50px;
+	color: red;
+}
+
+.li-w50{
+	width: 50%;
+	float: left;
+}
+
+.li-w30{
+	width: 33.3%;
+	float: left;
+	margin: 20px 0px;
+}
+
+.li-w100{
+	width: 100%;
+	/*float: left;*/
+}
+
+#input-year-li{
+}
+
+#input-year-li input{
+    font-size: 30px;
+    width: 537px;
+    padding: 5px 55px 5px 5px;
+    border-radius: 5px;
+    color: grey;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;  
+    outline: none;  
+    font-family: "Kanit", arial, tahoma;
+}
+
+#input-year-li div{
+	font-size: 18px;
+	text-decoration: none;
+	background: green;
+	color: #fff;
+	padding: 11px 5px;
+	border-radius: 5px;
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#close-year-board-y{
+	width: 50px;
+	height: 50px;
+	background: red;
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+#close-year-board-m{
+	width: 50px;
+	height: 50px;
+	background: red;
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.dichly-cover-tpo{
+	/*width: 1200px;*/
+	/*width: 100%;*/
+	width: calc(100% - 20px);
+	min-width: 1200px;
+	padding: 10px;
+	margin: 0 auto;
+	background: #fff;
+}
+#lunaBigTitle1{
+	font-size: 100%!important;
+	margin: 0px;
+	padding: 0px;
+	line-height: 100%;
+	margin-bottom: 20px;
+}
+#lunaBigTitle2{
+	font-size: 100%!important;
+	margin: 0px;
+	padding: 0px;
+	line-height: 100%;
+	margin-bottom: 20px;
+}
+.hongcanhsen{
+	background: #F7ADE2!important;
+}
+.bt-button{
+	padding: 10px 20px;
+	font-size: 18px;
+	border-radius: 10px;
+	cursor: pointer;
+	font-weight: bold;	
+	text-decoration: none;
+	border: 2px solid #
+}
+#backButton{
+	padding: 10px 20px;
+	font-size: 18px;
+	border-radius: 10px;
+	cursor: pointer;
+	font-weight: bold;
+}
+.bt-button:hover{
+	color: red;
+}
+#backButton:hover{
+	color: red;
+}
+.table-100-w, .thang{
+	width: 100%;
+	/*width: calc(100% - 20px);*/
+}
+
+.table-800px-w{
+	width: 800px;
+}
+
+.table-800px-w-que{
+	width: 100%;
+}
+
+#meaningAll, #meaningThis{
+	display: none;
+}
+
+.table-800px-w-que tr td.borderx{
+	width: 23px!important;
+}
+
+.table-800px-w-que tr td.border{
+	width: 300px!important;
+	vertical-align: top;
+}
+
+body, p, a, div, span, h1, h2, h3, h4, h5, h6, table, tr, td{
+	font-family: "Kanit", arial, tahoma;
+}
+
+table{cursor: pointer;}
+
+.thang{
+	background: #000;
+}
+
+.other-info{
+	background: #000;
+	margin-top: 10px;
+}
+
+.other-info-draw{
+	background: #000;
+	margin-top: 10px;	
+}
+
+.other-info-draw tr td.border{
+	border-bottom: 0px;
+}
+
+.other-info-draw tr:last-child td.border{
+	border-bottom: 1px solid #000;
+}
+
+.today-ns{
+	background: yellow!important;
+}
+
+.queFound{
+	background: orange!important;
+}
+
+.h2-lt{
+	margin-top: 0px;
+	margin-bottom: 5px;
+	font-size: 30px;
+	/*padding-bottom: 5px;*/
+}
+
+.lt-block{
+	padding-top: 10px;
+}
+
+.p-lt{
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+}
+
+.token-input-list{
+	/*border-radius: 10px!important;*/
+}
+
+.new-table-style td{
+	text-align: center;
+	width: 7.69%!important;
+	padding: 10px 0px 0px 0px;
+	margin: 0px;
+}
+
+.new-table-style td:first-child{
+	background: #cfcfcf;
+}
+
+.dl-ns{
+	font-size: 20px;
+
+}
+
+.al-ns{
+	font-size: 14px;
+	color: blue;
+}
+
+.other-infos{
+	background: #000;
+	margin-top: 10px;
+}
+
+.other-info-draws{
+	background: #000;
+	margin-top: 10px;	
+}
+
+.other-info-draws tr td.border{
+	border-bottom: 0px;
+}
+
+.other-info-draws tr:last-child td.border{
+	border-bottom: 1px solid #000;
+}
+
+
+
+
+
+
+.other-info tr, .other-info-draw tr{
+	background: #fff;
+	text-align: center;
+}
+
+.other-infos tr, .other-info-draws tr{
+	background: #fff;
+	text-align: center;
+}
+
+.other-info td, .other-info-draw td, .other-info-draw-lq td{
+	width: 8.33%;
+}
+
+.other-infos td, .other-info-draws td, .other-info-draw-lqs td{
+	width: 7.69%;
+}
+
+.tpo-day-draw-lq-header td.border{
+	/*min-height: 30px;*/
+    font-size: 20px!important;
+    background: #cfcfcf!important;	
+    padding: 5px 0px;
+}
+
+.uppersase{
+	text-transform: uppercase;
+}
+
+.tpo-day-draw-lq td p{
+	min-height: 150px;
+	text-align: justify;
+	padding: 10px;
+	font-size: 18px;
+	margin: 0px;
+}
+
+table.thang tr{
+	height: 80px;
+}
+
+.header-dy1{
+	padding: 0px;
+	font-size:50px; margin:20px 0px 10px 0px;
+	line-height: 100%;
+}
+
+.header-dy2{
+	font-size:60px; color: blue; margin: 0px 0px 10px 0px;
+	line-height: 100%;
+}
+
+.navi-l a, .navi-r a{
+	text-decoration: none;		
+}
+
+div.n-p-button-cover{
+	width: 80px;
+	height: 80px;
+	overflow: hidden;
+	border-radius: 50%;
+	padding: 0px;
+	margin:0px;
+	display: inline-block;
+	font-size: 50px;
+	line-height: 80px;
+	text-align: center;
+	background: #fff;
+	/*color: #90f990;*/
+	color: blue;
+	border: 3px solid blue;
+}
+
+div.n-p-button-cover:hover{
+	background: blue;
+	color: #fff;
+}
+
+._cYear{
+	width: 65px!important;
+	height: 65px!important;	
+	font-size: 40px!important;
+	line-height: 65px!important;	
+	color: #000!important;
+	border: 2px solid #000!important;
+}
+
+._cYear:hover{
+	background: #000!important;	
+	color: #fff!important;
+}
+
+tr.tpo-day{
+	height: 50px!important;
+	font-weight: bold;
+}
+
+tr.tpo-day-info{
+	height: 50px!important;
+	font-weight: bold;
+}
+
+.searchBox tr.tpo-day-info{
+	height: 50px!important;
+	font-weight: normal!important;
+}
+
+tr.tpo-day-draws{
+	height: 50px!important;
+	font-weight: bold;
+}
+
+tr.tpo-day-content{
+}
+
+.ngaythang,.homnay,.tet{
+	position: relative;
+}
+
+.sqbutton{
+	width: 500px;
+	margin: 0 auto;
+}
+
+.dl{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.queFound2x{
+	background: blue!important;
+}
+
+.am{
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+}
+
+.tpo-day-info{
+	background: #FFFFCC!important;
+}
+
+.tpo-day-draws .border{
+	background: #FFFFCC!important;
+}
+
+.tpo-day-h{
+	font-weight: bold;
+}
+
+.thanhLong{
+	color: green;
+	font-weight: bold;
+}
+
+.tpo-day-1{
+	/*font-size: 20px;*/
+	font-size: 100%;
+	font-weight: bold;
+	background: #cfcfcf!important;
+}
+
+.tpo-day-1s .border{
+	font-size: 20px!important;
+	background: #cfcfcf!important;
+}
+
+.tpo-day-3{
+	font-size: 14px;
+	color: blue;
+}
+
+.tpo-day-draw{
+	font-size: 80px;
+	font-weight: bold;
+}
+
+td.border{
+	border: 1px solid #000;
+}
+
+td.border img{
+	width: 100%;
+	height: auto;
+}
+
+.show-info-que{
+	background: #000;
+	margin-top: 10px;
+}
+
+.show-info-que td{
+	background: #fff;
+	padding: 5px;
+}
+
+.show-info-que tr td.cl-l{
+	width: 103px;
+	background: #FFFFCC!important;
+	font-weight: bold;
+	text-align: center;
+}
+
+.show-info-que tr td.cl-l-plus{
+	width: 103px;
+	text-align: center;
+	font-style: italic;
+}
+
+#currentBlockHours{
+	background: red!important;
+	color: #fff!important;
+}
+
+.clear{
+	clear: both;
+}
+
+.inQue{
+	padding: 20px;
+	margin: 0px;
+	list-style: none;
+}
+
+.inQue li{
+	margin-bottom: 20px;
+}
+
+.inQue li div{
+	background: #fff;
+}
+
+.inQue li#Q3{
+	/*margin-bottom: 40px;*/
+}
+
+.inQue li#Q6{
+	margin-bottom: 0px!important;
+}
+
+.inQueRow{
+	width: 100%;
+	height: 20px;
+	background: #000;
+}
+
+.cutLine div{
+	width: 20px;
+	height: 20px;
+	margin: 0 auto;
+	background: #fff;
+}

@@ -1,0 +1,275 @@
+﻿<!--Copyright 2016 Toan Phat Online Service Trading Company Limited [http://toanphatonline.com - contact@toanphatonline.com]-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta name="viewport" content="width=device-width">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Expires" content="0">		
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="Author" content="TPO">
+		<link rel="icon" type="image/x-icon" href="lichdichly.ico">
+		<title>Lịch Dịch Lý © AmTraDichLy.vn → Xem Ngày Giờ Tốt</title>
+	    <meta name="description" content="Ứng dụng Lịch Dịch Lý © AmTraDichLy.vn → Xem Ngày Giờ Tốt, lý tượng tình huống biến động diễn ra thế nào, từ đó ta biết nên tiến thoái, nhu cương, ẩn hiện, ... Từ đó ta nghiễm nhiên tự tại trước mọi động tĩnh của Thế Sự Nhân Tình.">
+	    <meta name="keywords" content="lich dich ly, xem ngay gio tot, am tra dich ly">  
+
+	    <!-- for facebook scraped / start -->
+	    <meta property="fb:admins" content="100002153632301">
+	    <meta itemprop="name" content="Lịch Dịch Lý © AmTraDichLy.vn → Xem Ngày Giờ Tốt">
+	    <meta itemprop="description" content="Ứng dụng Lịch Dịch Lý © AmTraDichLy.vn → Xem Ngày Giờ Tốt, lý tượng tình huống biến động diễn ra thế nào, từ đó ta biết nên tiến thoái, nhu cương, ẩn hiện, ... Từ đó ta nghiễm nhiên tự tại trước mọi động tĩnh của Thế Sự Nhân Tình.">
+	    <meta property="og:image" content="fb-share.jpg">
+	    <meta property="og:title" content="Lịch Dịch Lý © AmTraDichLy.vn → Xem Ngày Giờ Tốt">
+	    <meta property="og:description" content="Ứng dụng Lịch Dịch Lý © AmTraDichLy.vn → Xem Ngày Giờ Tốt, lý tượng tình huống biến động diễn ra thế nào, từ đó ta biết nên tiến thoái, nhu cương, ẩn hiện, ... Từ đó ta nghiễm nhiên tự tại trước mọi động tĩnh của Thế Sự Nhân Tình.">
+	    <meta property="og:type" content="article">
+	    <meta property="og:url" content="http://lichdichly.amtradichly.vn/search.html">
+	    <!-- for facebook scraped / end -->
+
+	    <meta name="robots" content="index,follow">
+	    <link rel="canonical" href="http://lichdichly.amtradichly.vn/search.html">
+		
+		<link rel="stylesheet" type="text/css" href="style.css?ver=290120183" media="screen">
+		<link href='../css.css?family=Kanit:400,300,300italic,400italic,500,500italic,700,700italic,800,800italic&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+		<script src="jquery-1.10.2.js"></script>
+		<script language="JavaScript" src="amlich-hnd.js?ver=290120182" type="text/javascript"></script>				
+	</head>
+	<body onload="" class="searchBox">
+		<a id="atdl-logo" href="../index.htm"><img src="logo-amtradichly-com-small.jpg"></a>
+		<div class="dichly-cover-tpo">
+			<center>
+				<script language="JavaScript">
+					document.writeln(printHeadSearch(currentMonth, currentYear));
+					$('#lunaBigTitle1').text('Ngày '+dayMonthYearLunar[0]+', Tháng '+dayMonthYearLunar[1]+', Năm '+dayMonthYearLunar[2]);
+					$('#lunaBigTitle2').text('('+currentDay+'/'+currentMonth+'/'+currentYear+' DL → '+getThisNumberDay+'/'+getThisNumberMonth+'/'+getLunarDate(currentDay, currentMonth, currentYear).year+' ÂL)');
+					$(document).ready(function(){
+						$(".header-dy1").click(function(){
+							$('.list-year').css('display','block');
+						});	
+						$(".header-dy2").click(function(){
+							$('.list-month').css('display','block');
+						});	
+						$("#close-year-board-y").click(function(){
+							$('.list-year').css('display','none');
+						});	
+						$("#close-year-board-m").click(function(){
+							$('.list-month').css('display','none');
+						});						
+					});										
+				</script>
+			    <script type="text/javascript" src="addon/loopj-jquery-token-input/src/jquery.tokeninput.js?ver=05022017"></script>
+			    <link rel="stylesheet" href="addon/loopj-jquery-token-input/styles/token-input.css?ver=05022017" type="text/css">
+			    <script type="text/javascript">
+			    $(document).ready(function() {
+			        $(".tkq").click(function () {
+			        	var stringKey = $(this).siblings("input[type=text]").val();
+			        	var stringKeyArray = stringKey.split(',');
+						$(".searchTenQue").each(function() {
+							$(this).removeClass( "queFound");
+							$(this).removeClass( "queFound2x");
+							var cn = $(this).attr('tqc');
+							var bn = $(this).attr('tqb');
+							var lt = $(this).attr('lt');
+							for (var i = 0; i < stringKeyArray.length; i++) {
+								if(cn == stringKeyArray[i]){
+									if($(this).hasClass( "queFound")){
+										$(this).addClass( "queFound2x" );
+									}else{
+										$(this).addClass( "queFound" );
+									}
+								}
+								if(bn == stringKeyArray[i]){
+									if($(this).hasClass( "queFound")){
+										$(this).addClass( "queFound2x" );
+									}else{
+										$(this).addClass( "queFound" );
+									}
+								}
+								if(lt == stringKeyArray[i]){
+									$(this).addClass( "queFound" );
+								}
+							};
+						});
+						$(".xkq").css('display','block');
+			        });
+			        $(".xkq").click(function () {
+			        	location.reload();
+			        });
+			    });
+			    </script>
+			    <div class="lt-block">
+			        <input type="text" id="demo-input-local" name="snq">
+			        <div class="clear"></div>
+		        	<input class="bsn tkq" type="button" value="Tìm Ngay">
+		        	<input class="bsn xkq" type="button" value="Xóa Kết Quả">
+			        <div class="clear"></div>
+			        <script type="text/javascript">
+			        $(document).ready(function() {
+			            $("#demo-input-local").tokenInput([
+			                {id: 'Lý', name: "Lý"},
+			                {id: 'Đồng Nhân', name: "Đồng Nhân"},
+			                {id: 'Vô Vọng', name: "Vô Vọng"},
+			                {id: 'Cấu', name: "Cấu"},
+			                {id: 'Tụng', name: "Tụng"},
+			                {id: 'Độn', name: "Độn"},
+			                {id: 'Bỉ', name: "Bỉ"},
+			                {id: 'Thuần Kiền', name: "Thuần Kiền"},
+
+			                {id: 'Cách', name: "Cách"},
+			                {id: 'Tùy', name: "Tùy"},
+			                {id: 'Đại Quá', name: "Đại Quá"},
+			                {id: 'Khốn', name: "Khốn"},
+			                {id: 'Hàm', name: "Hàm"},
+			                {id: 'Tụy', name: "Tụy"},
+			                {id: 'Quải', name: "Quải"},
+			                {id: 'Thuần Đoài', name: "Thuần Đoài"},
+
+			                {id: 'Phệ Hạp', name: "Phệ Hạp"},
+			                {id: 'Đỉnh', name: "Đỉnh"},
+			                {id: 'Vị Tế', name: "Vị Tế"},
+			                {id: 'Lữ', name: "Lữ"},
+			                {id: 'Tấn', name: "Tấn"},
+			                {id: 'Đại Hữu', name: "Đại Hữu"},
+			                {id: 'Khuể', name: "Khuể"},
+			                {id: 'Thuần Ly', name: "Thuần Ly"},
+
+			                {id: 'Hằng', name: "Hằng"},
+			                {id: 'Giải', name: "Giải"},
+			                {id: 'Tiểu Quá', name: "Tiểu Quá"},
+			                {id: 'Dự', name: "Dự"},
+			                {id: 'Đại Tráng', name: "Đại Tráng"},
+			                {id: 'Qui Muội', name: "Qui Muội"},
+			                {id: 'Phong', name: "Phong"},
+			                {id: 'Thuần Chấn', name: "Thuần Chấn"},
+
+			                {id: 'Hoán', name: "Hoán"},
+			                {id: 'Tiệm', name: "Tiệm"},
+			                {id: 'Quan', name: "Quan"},
+			                {id: 'Tiểu Súc', name: "Tiểu Súc"},
+			                {id: 'Trung Phu', name: "Trung Phu"},
+			                {id: 'Gia Nhân', name: "Gia Nhân"},
+			                {id: 'Ích', name: "Ích"},
+			                {id: 'Thuần Tốn', name: "Thuần Tốn"},
+
+			                {id: 'Kiển', name: "Kiển"},
+			                {id: 'Tỷ', name: "Tỷ"},
+			                {id: 'Nhu', name: "Nhu"},
+			                {id: 'Tiết', name: "Tiết"},
+			                {id: 'Ký Tế', name: "Ký Tế"},
+			                {id: 'Truân', name: "Truân"},
+			                {id: 'Tĩnh', name: "Tĩnh"},
+			                {id: 'Thuần Khảm', name: "Thuần Khảm"},
+
+			                {id: 'Bác', name: "Bác"},
+			                {id: 'Đại Súc', name: "Đại Súc"},
+			                {id: 'Tổn', name: "Tổn"},
+			                {id: 'Bí', name: "Bí"},
+			                {id: 'Di', name: "Di"},
+			                {id: 'Cổ', name: "Cổ"},
+			                {id: 'Mông', name: "Mông"},
+			                {id: 'Thuần Cấn', name: "Thuần Cấn"},
+
+			                {id: 'Thái', name: "Thái"},
+			                {id: 'Lâm', name: "Lâm"},
+			                {id: 'Minh Sản', name: "Minh Sản"},
+			                {id: 'Phục', name: "Phục"},
+			                {id: 'Thăng', name: "Thăng"},
+			                {id: 'Sư', name: "Sư"},
+			                {id: 'Khiêm', name: "Khiêm"},
+			                {id: 'Thuần Khôn', name: "Thuần Khôn"},
+
+			                {id: 'Thanh Long', name: "Thanh Long"},
+			                {id: 'Chu Tước', name: "Chu Tước"},
+			                {id: 'Câu Trần', name: "Câu Trần"},
+			                {id: 'Đằng Xà', name: "Đằng Xà"},
+			                {id: 'Bạch Hổ', name: "Bạch Hổ"},
+			                {id: 'Huyền Vũ', name: "Huyền Vũ"}
+			            ]);
+			        });
+			        </script>
+			    </div>
+				<ul class="list-year">
+					<script type="text/javascript">
+						$(document).ready(function(){
+							$("#input-year").keypress(function(event) {
+							  return /\d/.test(String.fromCharCode(event.keyCode));
+							});						
+						});
+						var startYear = currentYearKeep-6;
+						for (var y = 1; y <= 13; y++) {
+							if(y==7){
+								document.write('<div class="clear"></div><li id="current-year" class="li-w100"><a href="'+window.location.pathname+'?yy='+currentYearKeep+'">'+currentYearKeep+'</a></li><div class="clear"></div>');
+							}else{
+								document.write('<li class="li-w50"><a href="'+window.location.pathname+'?yy='+startYear+'&mm=1&dd=1&bh=1">'+startYear+'</a></li>');
+							}
+							startYear++;
+						};
+					</script>
+					<div class="clear"></div>					
+					<li id="input-year-li">
+						<script type="text/javascript">
+							document.write('<input type="text" name="input-year" id="input-year" value="'+currentYearKeep+'"/>');
+						</script>
+						<div onclick="goYear($('#input-year').val());">Xem</div>
+					</li>
+					<div id="close-year-board-y">X</div>
+				</ul>
+				<ul class="list-month">
+					<script type="text/javascript">
+						for (var m = 1; m <= 12; m++) {
+							if(m==currentMonthKeep){
+								document.write('<li id="current-month" class="li-w30"><a href="'+window.location.pathname+'?mm='+currentMonthKeep+'">'+currentMonthKeep+'</a></li>');
+							}else{
+								document.write('<li class="li-w30"><a href="'+window.location.pathname+'?yy='+currentYear+'&mm='+m+'&dd=1&bh=1">'+m+'</a></li>');
+							}
+							startYear++;
+						};
+					</script>
+					<div class="clear"></div>
+					<div id="close-year-board-m">X</div>
+				</ul>
+				<div id="ldlmscrolltop">
+					<table id="hourBlock" class="other-infos table-100-w" border="0" cellpadding="1" cellspacing="1">
+					   <tbody>
+							<tr class="tpo-day-info">
+								<td style="background: #cfcfcf!important;">Ngày</td>
+								<script type="text/javascript">
+									var idName = 'null';
+									var _h = ['23h - 1h','1h - 3h','3h - 5h','5h - 7h','7h - 9h','9h - 11h','11h - 13h','13h - 15h','15h - 17h','17h - 19h','19h - 21h','21h - 23h'];
+									for (var i = 0; i < 12; i++) {
+										if((i+1)==getThisNumberHours){idName='currentBlockHours';}else{idName='null';}
+										document.write('<td id='+idName+'>'+timeOfDayArray[i]+' '+canChi2[i]+'<br>'+_h[i]+'</td>');				
+									}
+								</script>				
+							</tr>
+					   </tbody>
+					</table>
+				</div>				
+				<script type="text/javascript">document.writeln(printSelectedMonthSearch());</script>
+				<div style="height: 37px; width: 100%;"></div>
+				<div id="ldlmscrollbottom">
+					<table id="hourBlock" class="other-infos table-100-w" border="0" cellpadding="1" cellspacing="1">
+					   <tbody>
+							<tr class="tpo-day-info">
+								<td style="background: #cfcfcf!important;">Ngày</td>
+								<script type="text/javascript">
+									var idName = 'null';
+									var _h = ['23h - 1h','1h - 3h','3h - 5h','5h - 7h','7h - 9h','9h - 11h','11h - 13h','13h - 15h','15h - 17h','17h - 19h','19h - 21h','21h - 23h'];
+									for (var i = 0; i < 12; i++) {
+										if((i+1)==getThisNumberHours){idName='currentBlockHours';}else{idName='null';}
+										document.write('<td id='+idName+'>'+timeOfDayArray[i]+' '+canChi2[i]+'<br>'+_h[i]+'</td>');				
+									}
+								</script>				
+							</tr>
+					   </tbody>
+					</table>
+				</div>				
+			</center>
+		</div>
+	</body>
+	<script language="JavaScript" src="footer-js.js?ver=05022017" type="text/javascript"></script>
+    <script type="text/javascript">
+	    $(document).ready(function() {
+	        var fixedWidth = $('#ldlmscrolltop').width();
+	        $('#ldlmscrollbottom').width(fixedWidth);
+	    });
+    </script>	
+</html>
